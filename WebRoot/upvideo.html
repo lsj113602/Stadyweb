@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>上传视频|BEGEEK</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="Shortcut Icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/acss.css">
+    <link rel="stylesheet" href="font/index/iconfont.css">
+    <link rel="stylesheet" href="css/evenFlow.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="background-color: #f8f8f8">
+<div class="container">
+    <div style="height: 20px"></div>
+    <div>
+        <!-- Nav tabs -->
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="nav nav-pills" role="tablist">
+                    <li role="presentation" ><a href="upfile.html" style="outline:none;" >文章</a></li>
+                    <li role="presentation"><a href="upfile.html" style="outline:none;" >视频</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6" style="text-align: right">
+                <div style="height: 20px"></div>
+                <button class="btn btn-info">上传文章</button>
+                <button class="btn btn-info">上传视频</button>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-md-2"></div>
+
+            <div class="col-md-8">
+                <div style="height: 15px"></div>
+                <form action="#" method="post" >
+                    <h2>视频上传</h2>
+                    <div style="height: 5px"></div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="title" placeholder="视频标题">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="intro" placeholder="简介">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >级别</label>
+                                <select class="form-control" name="lavel">
+                                    <option value ="easy">简单</option>
+                                    <option value ="usually">一般</option>
+                                    <option value="difficult">困难</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >所属课程</label>
+                                <select class="form-control" name="className">
+                                    <option value ="Java">Java</option>
+                                    <option value ="Python">Python</option>
+                                    <option value="PHP">PHP</option>
+                                    <option value="Android">Android</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label>选择视频</label>
+                        <input type="file" name="pic">
+                    </div>
+
+                    <div class="form-group">
+                        <label>选择封面</label>
+                        <input type="file" name="video">
+                    </div>
+
+                    <div style="text-align: right">
+                        <div style="height: 50px"></div>
+                        <button type="submit" class="btn btn-success"> 上传 <span class="glyphicon glyphicon-open"></span> </button>
+                        <button type="reset" class="btn btn-default">&nbsp;取消&nbsp; </button>
+                    </div>
+
+                </form>
+
+
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>走进JavaWeb的世界|BEGEEK</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="Shortcut Icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/acss.css">
+    <link rel="stylesheet" href="font/index/iconfont.css">
+    <link rel="stylesheet" href="css/evenFlow.css">
+    <link href="css/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/videocss.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+
+    <![endif]-->
+</head>
+
+
+
+    <body >
+
+
+
+    <!--导航条-->
+    <nav class="navbar navbar-default navbar-inverse " style="border: 0;height: 60px;padding: 4px">
+        <div class="container" style="min-height: 100%">
+            <div class=""   style="background-color:  ;margin: 0;text-align: left">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="font-size: 20px;">
+                        &nbsp;&nbsp;
+                        <i class="iconfont" style="font-size: 35px;color: white">&#xe651;</i>
+
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="">
+                    <ul class="nav navbar-nav">
+                        <li>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  </li>
+                        <li ><a href="index.html"  style="color: #fff;font-size: 18px">&nbsp;首页&nbsp;</a></li>
+                        <li ><a class="more" href="#" style="color: #fff;font-size: 18px">&nbsp;所有课程&nbsp;<span class="sr-only">(current)</span></a></li>
+                        <li ><a href="forum.html"  style="color: #fff;font-size: 18px">&nbsp;GEEK社区&nbsp;</a></li>
+                        <li ><a href="#"  style="color: #fff;font-size: 18px">&nbsp;资源共享&nbsp;</a></li>
+                        <li ><a href="#"  style="color: #fff;font-size: 18px">&nbsp;书籍资源&nbsp;</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown" >
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yifan <span class="caret"></span></a>
+                            <ul class="dropdown-menu" style="background-color: #4d6071">
+                                <li><a href="center.html" >个人中心</a></li>
+
+                                <li><a href="#">切换用户</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#" >注销</a></li>
+
+
+                    </ul>
+                    <form class="hidden-xs navbar-form navbar-right visible-lg visible-xs" role="search" style="margin-top:10px">
+                        <div class="form-group has-feedback">
+                            <span class="glyphicon glyphicon-search form-control-feedback" style="color: #fff"></span>
+                            <input type="text" class="form-control input-sm" placeholder="搜索" style="background-color: #444;border-color:#666;color: #fff">
+                        </div>
+                    </form>
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+
+        </div>
+
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">发表问题</h4>
+                </div>
+                <div class="modal-body">
+                   问题内容
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="position: fixed;right:0;top:40%;z-index: 100">
+
+            <ul class="list-group">
+                <a id="kachanav" href="#" onclick="clickfunc()"  style="outline:none;text-decoration: none" >
+
+                    <li style=";border-radius: 0;border-left: 0;border-right: 0;border-top: 0;background-color: #444;color: #fff;border-color: #000;border-width: 2px;outline:none;" class="list-group-item">< 课程</li>
+
+                </a>
+                <a href="javascript:void (0)" onclick="alert('作者未提供文档！!');" style="outline:none;text-decoration: none">
+                    <li  style="border-radius: 0;border-left: 0;border-right: 0;border-top: 0;;background-color: #444;color: #fff;border-color: #000;border-width: 2px;" class="list-group-item">< 文档</li>
+
+                </a>
+                <a href="" data-toggle="modal" data-target="#myModal" style="outline:none;text-decoration: none">
+                    <li style="border-radius: 0;;border-left: 0;border-right: 0;border-top: 0;background-color: #444;color: #fff;border-color: #000;border-width: 2px;outline:none;" class="list-group-item">< 问答</li>
+
+                </a>
+                <a  href="javascript:void (0)" onclick="alert('当前视频没有笔记!');"  style="outline:none;text-decoration: none">
+                    <li style="border-radius: 0;;border-left: 0;border-right: 0;border-top: 0;border-bottom: 0;background-color: #444;color: #fff;border-color: #000;outline:none;;border-width: 2px"  class="list-group-item">< 题目</li>
+
+                </a>
+            </ul>
+
+    </div>
+    <div   style="margin-top: -5px;background-image: url();background-position: center center;background-size:cover">
+
+        <div style="background-color:#000 ;">
+
+            <div class="container" style="color: #fff;margin-top: 5px;margin-bottom: 5px">
+                <h4>2-1 Java语言基础-计算机进制转换</h4>
+            </div>
+            <div id="kachaid2"></div>
+            <div class="container">
+
+
+                        <video id="my-video" class="video-js vjs-default-skin" controls preload="none" width="100%" height="auto"
+                               data-setup="{}" poster="img/java.jpg">
+                            <source src="video/2-2.mp4" type='video/mp4'>
+
+                            <!--<source src="http://7xru12.media1.z0.glb.clouddn.com/ad720p.mp4" type='video/mp4'>-->
+                        </video>
+                        <!--<video style="" id="adv_video" src="http://7xpxxt.com1.z0.glb.clouddn.com/e015162e0jt.p701.1.mp4" width="100%" preload="none" controls autoplay>
+                            你的浏览器不支持该视频格式
+                        </video>
+
+
+                        <video style="display: " id="wyx_video" src="{{ video.url }}" width=100%
+                               controls preload="none">
+                            你的浏览器不支持该视频格式
+                        </video> -->
+
+                        <div style="background-color: #FFF;height: 40px;margin-bottom: 20px;padding: 8px">
+                            <div style="position: relative;">
+                                <!-- JiaThis Button BEGIN -->
+                                <div class="jiathis_style" style="margin-top: 4px">
+                                    <span class="jiathis_txt">分享到：</span>
+                                    <a class="jiathis_button_icons_1"></a>
+                                    <a class="jiathis_button_icons_2"></a>
+                                    <a class="jiathis_button_icons_3"></a>
+                                    <a class="jiathis_button_icons_4"></a>
+                                    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                </div>
+                                <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                                <!-- JiaThis Button END -->
+                                <div style="position: absolute; right: 0px; top: 0px;margin-top: -2px">浏览次数: 200
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                <!-- <button class="btn btn-default" onclick="js();">跳过广告</button>-->
+
+
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div style="margin-top: 30px">
+                <div style="position: relative;">
+                    <h3>Java语言基础-计算机进制转换
+                        <small>Java入门</small>
+                    </h3>
+
+                </div>
+
+                <h5>作者:极客学院</h5>
+
+                <p>简介:
+                    计算机进制转换计算机进制转换计算机进制转换计算机进制转换计算机进制转换计算机进制转换
+                </p>
+            </div>
+
+
+            <div style="margin-top: 50px;">
+                <h3>作者相关</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div style="background-image: url(img/javaproject/web1.png);background-size: cover;background-position: center">
+                        <img width="100%" src="img/tm.png" alt="">
+
+                    </div>
+                    <div style="text-align: center;padding: 8px">
+                        JavaWeb Http请求实例
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div style="background-image: url(img/javaproject/web2.jpeg);background-size: cover;background-position: center">
+                        <img width="100%" src="img/tm.png" alt="">
+
+                    </div>
+                    <div style="text-align: center;padding: 8px">
+                        JavaWeb Http请求实例
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div style="background-image: url(img/javaproject/web3.png);background-size: cover;background-position: center">
+                        <img width="100%" src="img/tm.png" alt="">
+
+                    </div>
+                    <div style="text-align: center;padding: 8px">
+                        JavaWeb Http请求实例
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div style="background-image: url(img/javaproject/web6.jpg);background-size: cover;background-position: center">
+                        <img width="100%" src="img/tm.png" alt="">
+
+                    </div>
+                    <div style="text-align: center;padding: 8px">
+                        JavaWeb Http请求实例
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div style="margin-top: 50px;">
+                <h3>相关推荐</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div style="background-image: url(img/javaproject/web1.png);background-size: cover;background-position: center">
+                        <img width="100%" src="img/tm.png" alt="">
+
+                    </div>
+                    <div style="text-align: center;padding: 8px">
+                        JavaWeb Http请求实例
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div style="background-image: url(img/javaproject/web2.jpeg);background-size: cover;background-position: center">
+                        <img width="100%" src="img/tm.png" alt="">
+
+                    </div>
+                    <div style="text-align: center;padding: 8px">
+                        JavaWeb Http请求实例
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div style="background-image: url(img/javaproject/web3.png);background-size: cover;background-position: center">
+                        <img width="100%" src="img/tm.png" alt="">
+
+                    </div>
+                    <div style="text-align: center;padding: 8px">
+                        JavaWeb Http请求实例
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div style="background-image: url(img/javaproject/web6.jpg);background-size: cover;background-position: center">
+                        <img width="100%" src="img/tm.png" alt="">
+
+                    </div>
+                    <div style="text-align: center;padding: 8px">
+                        JavaWeb Http请求实例
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" style="margin-top: 50px">
+
+                <div class="col-md-9">
+                    <h4>问答</h4>
+                    <textarea id="comment" placeholder="请输入10个字以上的评论" class="form-control" rows="5" style="resize: none;" >您必须登录后才能提交评价</textarea>
+                    <p class="text-right" style="margin-top: 10px;"><button class="btn btn-success" onclick="commentSubmit()"  type="button">提交评论</button></p>
+                    <hr style="height:1px;border:none;border-top:1px dashed #44B549;" />
+                    <!--评论-->
+                    暂无问答,赶紧评论!
+
+
+                </div>
+
+                <div class="col-md-3">
+
+
+                    <h4>热门作品</h4>
+
+                    <div class="portfolio-item" style="margin-bottom: 20px;">
+                        <div class="portfolio-item-image image-overlay"><a class="titan-lb" data-titan-group="gallery"
+                                                                           href="#"><img width="100%"
+                                                                                                                                src="img/java.jpg" alt=""> <span
+                                class="overlay-icon item-movie" style="opacity: 0;"></span> </a></div>
+                        <div class="portfolio-item-content">
+                            <a  href="javascript:void(0)" style="color: #000;text-decoration:none;">
+                                <h4 class="ptitle">Java葵花宝典</h4>
+                                <p>尚学堂</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="portfolio-item" style="margin-bottom: 20px;">
+                        <div class="portfolio-item-image image-overlay"><a class="titan-lb" data-titan-group="gallery"
+                                                                           href="#"><img width="100%"
+                                                                                         src="img/java.jpg" alt=""> <span
+                                class="overlay-icon item-movie" style="opacity: 0;"></span> </a></div>
+                        <div class="portfolio-item-content">
+                            <a  href="javascript:void(0)" style="color: #000;text-decoration:none;">
+                                <h4 class="ptitle">Java葵花宝典2</h4>
+                                <p>尚学堂</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <!--footer-->
+    <div style="height: 100px"></div>
+    <footer>
+        <div style="height: 100px;width: 100%;background-color:  #4d6071;text-align: center;padding: 15px">
+            <p style="color: white">联系我们&nbsp;|&nbsp;网站首页&nbsp;|&nbsp;免责声明&nbsp;|&nbsp;关于我们</p>
+            <p style="color: white">Copyright © 2016 &nbsp; <a style="color: white" href="">极客联盟</a> / 程序设计大赛创新实验室.</p>
+        </div>
+
+
+    </footer>
+    <script>
+        function clickfunc(){
+            $('html, body').animate({
+                scrollTop: $("#kachaid2").offset().top
+            }, 1500);
+        }
+    </script>
+
+    <script>
+        function changeNum(){
+            document.getElementById("add").innerHTML="已关注";
+            document.getElementById("add").style.backgroundColor="#e35b5a";
+            document.getElementById("number").innerHTML="13";
+
+
+        }
+
+
+    </script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+
+</html>

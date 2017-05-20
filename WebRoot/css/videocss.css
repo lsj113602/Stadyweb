@@ -1,0 +1,441 @@
+
+    /*--------------------------------------------
+9. Portfolio
+--------------------------------------------*/
+.portfolio-block h1 {
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+
+.element {
+    padding: 15px;
+}
+
+.element .flex-video {
+}
+
+.variable-sizes .element.width2 {
+    width: 50%;
+}
+
+.element.large, .variable-sizes .element.large, .variable-sizes .element.large.width2.height2 {
+    width: 50%;
+}
+
+#container {
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .element {
+        width: 100% !important;
+    }
+}
+
+/* Filter List */
+.option-set {
+    list-style: none;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.option-set li {
+    display: inline;
+}
+
+.option-set li a {
+    background: #f0f0f0;
+    color: #666;
+}
+
+.option-set li a.selected {
+    color: #fff;
+    background: #44B549;
+}
+
+.active .button {
+}
+
+.portfolio-block {
+}
+
+.portfolio-item {
+}
+
+.portfolio-item-image {
+}
+
+.portfolio-item-image img {
+    display: block;
+}
+
+.portfolio-item-content {
+    background: #fff;
+    padding: 10px 5px;
+    text-align: center;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+    -webkit-transition: border-color .3s ease-in-out;
+    -moz-transition: border-color .3s ease-in-out;
+    -ms-transition: border-color .3s ease-in-out;
+    -o-transition: border-color .3s ease-in-out;
+    transition: border-color .3s ease-in-out;
+    border-bottom: 1px solid transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.portfolio-item:hover .portfolio-item-content {
+    border-bottom: 1px solid #44B549;
+}
+
+.portfolio-item-content .title {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.portfolio-item-content p {
+    margin: 0;
+}
+
+.ptitle {
+    margin: 0;
+    text-transform: uppercase;
+}
+/*----------------------------------------------
+11. Comments
+------------------------------------------------*/
+.comment-block {
+    overflow: hidden;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+    background-color: #FFF;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.reply {
+    margin-left: 60px;
+}
+
+.comment-text {
+    margin: 0 0 10px 65px;
+}
+
+.username {
+    margin: 0 0 3px 65px;
+}
+
+.comment_date {
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin: 0 0 10px 65px;
+    border-bottom: 1px #CCC dotted;
+}
+
+.link-reply {
+    margin-left: 65px;
+}
+
+/* Avatars
+---------------------------------------- */
+.large-avatar {
+    margin-bottom: 0;
+}
+
+.small-avatar {
+    float: left;
+}
+
+/*----------------------------------------------
+16. Pricing Tables
+----------------------------------------------*/
+.pricing-table {
+    font-family: 'Open Sans', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    float: left;
+    width: 100%;
+    margin-bottom: 0px;
+    border: none;
+}
+
+.plans {
+    margin-bottom: 0;
+}
+
+.pricing-table .columns {
+    padding: 1px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.pricing-table .button:hover {
+    background-color: #999;
+}
+
+.plan_features:nth-child(even) {
+    background: none repeat scroll 0 0 #F7F7F7;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 5px;
+    width: 100%;
+}
+
+.plan_features:nth-child(odd) {
+    background: none repeat scroll 0 0 #fff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 5px;
+}
+
+.plan_price {
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: 300;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: -2px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.plan_price span {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em;
+}
+
+.pricing_plan1 .plan_price, .pricing_plan1 .buy {
+    background: none repeat scroll 0 0 #999;
+}
+
+.pricing_plan2 .plan_price, .pricing_plan2 .buy {
+    background: none repeat scroll 0 0 #999;
+}
+
+.pricing_plan3 .plan_price, .pricing_plan3 .buy {
+    background: none repeat scroll 0 0 #999;
+}
+
+.pricing_plan4 .plan_price, .pricing_plan4 .buy {
+    background: none repeat scroll 0 0 #999;
+}
+
+.plan_title {
+    background: none repeat scroll 0 0 #444;
+    color: #e5e5e5;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    font-family: 微软雅黑;
+}
+
+.plan {
+    border: 1px solid #eee;
+    margin-bottom: 0;
+}
+
+.plan_buy {
+    background: none repeat scroll 0 0 #444;
+    padding: 20px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.plan_buy a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.plan_more {
+    background: none repeat scroll 0 0 #fff;
+    font-size: 13px;
+    padding: 10px;
+    display: none;
+}
+
+.more_icon {
+    background-image: url("../images/plus_minus_icons.png");
+    background-position: 25px -3px;
+    float: right;
+    height: 25px;
+    width: 25px;
+}
+
+.more_icon:hover {
+    cursor: pointer;
+}
+
+.less_icon {
+    background-image: url("../images/plus_minus_icons.png");
+    background-position: 0px -3px;
+    float: right;
+    height: 25px;
+    width: 25px;
+}
+
+.less_icon:hover {
+    cursor: pointer;
+}
+
+.plan_features img {
+    float: left;
+}
+
+.feature_desc {
+    color: #4E4E4E;
+    text-align: center;
+}
+
+.pricing_plan1:hover {
+    position: relative;
+    z-index: 100;
+    -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=90, Color='#000000')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=90, Color='#000000');
+}
+
+.pricing_plan1:hover .plan_price {
+}
+
+.pricing_plan1:hover .plan_buy {
+    background: #666 !important;
+}
+
+.pricing_plan2:hover {
+    position: relative;
+    z-index: 100;
+    -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=90, Color='#000000')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=90, Color='#000000');
+}
+
+.pricing_plan2:hover .plan_price {
+}
+
+.pricing_plan2:hover .plan_buy {
+    background: #666 !important;
+}
+
+.pricing_plan3:hover {
+    position: relative;
+    z-index: 100;
+    -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=90, Color='#000000')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=90, Color='#000000');
+}
+
+.pricing_plan3:hover .plan_price {
+}
+
+.pricing_plan3:hover .plan_buy {
+    background: #666 !important;
+}
+
+.pricing_plan4:hover {
+    position: relative;
+    z-index: 100;
+    -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=90, Color='#000000')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=90, Color='#000000');
+}
+
+.pricing_plan4:hover .plan_price {
+}
+
+.pricing_plan4:hover .plan_buy {
+    background: #666 !important;
+}
+
+/* Pricing Table Alternative*/
+.pricing-alternative {
+}
+
+.pricing-alternative .plan_title {
+    background: #e5e5e5;
+    color: #444;
+}
+
+.pricing-alternative .pricing_plan1 .plan_price {
+    background: #444;
+    color: #fff;
+}
+
+.pricing-alternative .pricing_plan2 .plan_price {
+    background: #444;
+    color: #fff;
+}
+
+.pricing-alternative .pricing_plan3 .plan_price {
+    background: #444;
+    color: #fff;
+}
+
+.pricing-alternative .pricing_plan4 .plan_price {
+    background: #444;
+    color: #fff;
+}
+
+.pricing-alternative .plan_buy {
+    background: #e5e5e5;
+}
+
+.pricing-alternative .pricing_plan1:hover .plan_buy {
+    background: #444 !important;
+}
+
+.pricing-alternative .pricing_plan2:hover .plan_buy {
+    background: #444 !important;
+}
+
+.pricing-alternative .pricing_plan3:hover .plan_buy {
+    background: #444 !important;
+}
+
+.pricing-alternative .pricing_plan4:hover .plan_buy {
+    background: #444 !important;
+}
+
+/* Pricing Table Alternative - Active Column*/
+
+.pricing-active {
+    position: relative;
+    z-index: 90;
+    -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=90, Color='#000000')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=90, Color='#000000');
+}
+
+.pricing-active .plan_price {
+    color: #fff !important;
+}
+
+.pricing-active .plan_buy {
+    background: #444 !important;
+}
+
